@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="copyright" content="Pomodoro Technique">
+    <meta name="keywords" content="Pomodoro Technique">
+    <meta name="description" content="Pomodoro Technique">
+    <meta name="theme-color" content="#373e57">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,500,700" rel="stylesheet">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section id="left_outter" class="left_outter">
+            <div class="btn_area">
+                <div class="btn addItem_btn"></div>
+                <div class="btn list_btn"> </div>
+                <div class="btn analytics_btn"> </div>
+                <div class="btn music_btn"> </div>
+            </div>
+            <div class="clock_area">
+                <div class="clock_main">
+                    <div class="clock_large"> <img src="images/Oval.svg" alt="">
+                        <div class="clock_side">
+                            <div class="clock_little"><img src="images/Oval.svg" alt=""></div>
+                            <div class="clock_little"><img src="images/Oval.svg" alt=""></div>
+                            <div class="clock_little"><img src="images/Oval.svg" alt=""></div>
+                            <div class="clock_little"><img src="images/Oval.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clock_text">
+                    <h3>You don’t have any task now.</h3>
+                    <h2 class="addTask_btn">ADD TASK</h2> </div>
+            </div>
+        </section>
+        <section id="right_outter" class="right_outter">
+            <div class="content_wrap content_addNew">
+                <div class="content_title">
+                    <h4>ADD NEW TASK</h4> <span></span> </div>
+                <div class="content_box">
+                    <h3>TASK NAME</h3>
+                    <input type="text" placeholder="first task name"> </div>
+                <div class="content_box">
+                    <h3>ESTIMATED TOMATO</h3>
+                    <ul class="tomato_list">
+                        <li class="item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                    </ul>
+                </div>
+                <div class="content_box">
+                    <h3>DEAD LINE</h3>
+                    <input type="date"> </div>
+                <div class="content_box">
+                    <div class="ok_btn">OK</div>
+                </div>
+            </div>
+            <div class="content_wrap content_taskList">
+                <div class="content_title">
+                    <h4>TASK LIST</h4> <span></span> </div>
+                <div class="content_box">
+                    <h3>TODAY’S TASK</h3>
+                    <ul class="task_list">
+                        <li class="task_item">
+                            <div class="move_icon"><img src="images/move_btn.svg" alt=""></div>
+                            <label for="item-2">
+                                <input type="checkbox" name="item-2" id="item-2" /><span class="check_blue"></span>
+                                <h3>Task one</h3>
+                                <ul class="tomato_list">
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                </ul>
+                                <div class="play_btn"></div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_box">
+                    <h3>NOT FINISHED</h3>
+                    <ul class="task_list">
+                        <li class="task_item">
+                            <div class="move_icon"><img src="images/move_btn.svg" alt=""></div>
+                            <label for="item-2">
+                                <input type="checkbox" name="item-2" id="item-2" /><span class="check-blue"></span>
+                                <h3>Task one</h3>
+                                <ul class="tomato_list">
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                </ul>
+                                <div class="play_btn"></div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_box">
+                    <h3>DONE</h3>
+                    <ul class="task_list">
+                        <li class="task_item">
+                            <div class="move_icon"><img src="images/move_btn.svg" alt=""></div>
+                            <label for="item-2">
+                                <input type="checkbox" name="item-2" id="item-2" /><span class="check-blue"></span>
+                                <h3>Task one</h3>
+                                <ul class="tomato_list">
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                </ul>
+                                <div class="play_btn"></div>
+                            </label>
+                        </li>
+                        <li class="task_item">
+                            <div class="move_icon"><img src="images/move_btn.svg" alt=""></div>
+                            <label for="item-2">
+                                <input type="checkbox" name="item-2" id="item-2" /><span class="check-blue"></span>
+                                <h3>Task one</h3>
+                                <ul class="tomato_list">
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                    <li class="item"></li>
+                                </ul>
+                                <div class="play_btn"></div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
